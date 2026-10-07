@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+   "target": "ESNext",               // gunakan fitur modern JS
+    "module": "CommonJS",               // sistem modul ESM
+    "moduleResolution": "node10",   // cara resolve modul sesuai Node.js terbaru
+    "strict": true,                   // aktifkan pengecekan ketat
+    "esModuleInterop": true,          // dukungan import default
+    "resolveJsonModule": true,        // bisa import file JSON
+    "types": ["node", "playwright"],  // definisi tipe Node.js & Playwright
+    "outDir": "dist",
+    "ignoreDeprecations": "6.0"
+  
+  },
+  "include": ["tests", "playwright.config.ts"]
+}
